@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock Paper Scissors</title>
+		<link rel="icon" href="images/Favicon.jpg" />
+		<!-- CSS LINK -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<article>
+			<div class="container">
+				<h1>Rock Paper Scissors</h1>
+
+				<div class="top-section">
+					<div class="player-data">
+						<input type="text" placeholder="Player" />
+						<span>Score: <strong class="player-score">0</strong></span>
+					</div>
+					<div class="computer-data">
+						<p>Computer</p>
+						<span>Score: <strong class="ai-score">0</strong></span>
+					</div>
+				</div>
+
+				<section class="game">
+					<button class="choice-btn" data-choice="paper">
+						<div class="choice paper">
+							<img src="images/paper.png" alt="Paper" />
+						</div>
+					</button>
+					<button class="choice-btn" data-choice="scissors">
+						<div class="choice scissors">
+							<img src="images/scissors.png" alt="Scissors" />
+						</div>
+					</button>
+					<button class="choice-btn" data-choice="rock">
+						<div class="choice rock">
+							<img src="images/rock.png" alt="Rock" />
+						</div>
+					</button>
+				</section>
+			</div>
+
+			<section class="result hidden">
+				<h2 class="result-heading">Your Pic</h2>
+				<h2 class="result-heading">Computer Pic</h2>
+				<div class="final-result"></div>
+				<div class="results-winner hidden">
+					<h3 class="result-text"></h3>
+					<button class="play-again">play again</button>
+				</div>
+				<div class="final-result"></div>
+			</section>
+
+			<button class="rules-btn" tabindex="1">rules</button>
+
+			<div class="modal">
+				<div class="modal-container">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="2.5"
+						stroke="currentColor"
+						class="close-btn">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+					</svg>
+					<!-- <img class="rules-img" src="images/game-rules.png" alt=""> -->
+					<img class="rules-img" src="images/rock-paper-scissors-game-rules.png" alt="" />
+				</div>
+			</div>
+		</article>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
