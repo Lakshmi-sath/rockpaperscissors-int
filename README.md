@@ -1,4 +1,4 @@
-<div>
+<div align="center">
 
   # Rock Paper Scissors
 
